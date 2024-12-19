@@ -25,7 +25,7 @@ function AddAttendance() {
   const addHandler = async ()  => {
     const didAdd = await addSubject(days, subject)
     if(didAdd === true){
-      navigate('/attendance')
+      navigate('/')
     }
     else{
       alert(`${didAdd.message}`)
