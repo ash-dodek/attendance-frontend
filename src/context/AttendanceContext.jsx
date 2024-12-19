@@ -50,9 +50,13 @@ const AttendanceProvider = ({ children }) => {
             return;
         })
         if(res.status === 200){
-            return await res.json()
+            const data = await res.json()
+            console.log(data)
+            return data
         }else{
-            return await res.json()
+            const data = await res.json()
+            console.log(data)
+            return data
         }
     }
 
