@@ -8,7 +8,7 @@ import { AttendanceContext } from '../context/AttendanceContext'
 
 function AttendancePage() {
   const navigate = useNavigate()
-  const [res, setRes] = useState()
+  const [res, setRes] = useState([])
   const {getSubjects, setSubjectName, subjectName} = useContext(AttendanceContext)
 //   let res;
   useEffect(() => {
