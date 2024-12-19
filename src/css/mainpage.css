@@ -1,0 +1,80 @@
+body{
+    background-color: #f8f8f8;
+    /* color: #223b56; */
+}
+.studentBlock{
+    background-color: #edeef0;
+    /* height: 200px; */
+    padding: 30px;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    gap: 40px;
+}
+.blockTitle{
+    font-size: 27px;
+    font-weight: 600;
+}
+.studetails{
+    display: flex;
+    font-weight: 600;
+    gap: 30px;
+}
+#profile{
+    height: 100px;
+    border-radius: 100%;
+}
+.d-title{
+    font-size: 20px;
+    /* color: black; */
+}
+.details{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    gap: 30px;
+    color: #223b56;
+    opacity: 0.9;
+    /* align-items: center; */
+    /* justify-content: space; */
+}
+.moreInfo{
+    font-size: 16px;
+    color: black;
+}
+.infolabel{
+    font-weight: 500;
+}
+/* https://dribbble.com/shots/20937137-Findez-Attendance-Monitoring-Dashboard */
+
+.stats{
+    display: flex;
+    /* gap: 30px; */
+    justify-content: space-between;
+}
+
+
+.stat-title{
+    /* font-weight: bold; */
+    font-size: 17px;
+    /* margin-bottom: 19px; */
+}
+.stat{
+    background-color: #f9f9f9;
+    padding: 30px;
+    width: 200px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.textBig{
+    font-size: 40px;
+    font-weight: bold;
+}
+.statIcon{
+    font-size: 40px;
+}

@@ -1,0 +1,14 @@
+.navbar{
+    display: flex;
+    /* background-color: red; */
+    padding: 30px;
+    justify-content: space-between;
+}
+.navContents{
+    display: flex;
+    gap: 40px;
+}
+.title{
+    font-weight: 700;
+    font-size: 25px;
+}
