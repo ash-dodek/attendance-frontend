@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import '../css/AttendancePage.css'
+import '../css/attendancePage.css'
 import Class from './Class'
 import Button from './Button'
 import { Link, useNavigate } from 'react-router-dom'
