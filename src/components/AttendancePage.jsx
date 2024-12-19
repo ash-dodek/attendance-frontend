@@ -12,11 +12,16 @@ function AttendancePage() {
   const {getSubjects, setSubjectName, subjectName} = useContext(AttendanceContext)
 //   let res;
   useEffect(() => {
-    const fetchSubjects = async()=>{
+    try {
+
+      const fetchSubjects = async()=>{
         setRes(await getSubjects())
         
+      }
+      fetchSubjects()
+    } catch (error) {
+      console.log(error)
     }
-    fetchSubjects()
     
   }, [])
   
@@ -37,10 +42,11 @@ function AttendancePage() {
             </div>
 
             <div className="subjects">
-                    { res?.length === 0? <div className="noSubjects">Add Subjects to start tracking them now</div>:
+                    { res.length === 0? (<div className="noSubjects">Add Subjects to start tracking them now</div>):(
                         res?.map((subject) => {
                             return <Class subjectId={subject._id} onClick={() => onClickSubject(subject.subject)} key={subject._id} subject={subject.subject}/>
                         })
+                      )
                     }
             </div>
         </div>
