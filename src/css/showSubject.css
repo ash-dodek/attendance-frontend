@@ -145,7 +145,7 @@
         flex-flow: column;
         align-items: center;
     }
-    .button{
+    .buttons .button{
         font-size: 15px;
         margin-left: 0;
         margin-right: 0;
