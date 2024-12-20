@@ -33,3 +33,22 @@
     gap: 10px;
     margin-bottom: 20px;
 }
+.daysInput div{
+    gap: 20px;
+}
+
+@media screen and (max-width: 600px){
+    .addAttendance{
+        width: 70vw;
+    }
+    .daysInput{
+        flex-flow: column;
+    }
+}   
+@media (max-width: 450px){
+    .addAttendance{
+        padding: 30px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}

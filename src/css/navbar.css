@@ -3,12 +3,59 @@
     /* background-color: red; */
     padding: 30px;
     justify-content: space-between;
+    align-items: center;
 }
 .navContents{
     display: flex;
     gap: 40px;
+    align-items: center;
 }
 .title{
     font-weight: 700;
     font-size: 25px;
+}
+@media (max-width: 600px){
+    .title{
+        font-size: 18px;
+    }
+    .navContents{
+        gap: 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:540px){
+    .button{
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+}
+
+@media (max-width: 480px){
+    .title{
+        font-size: 15px;
+    }
+    .navContents{
+        gap: 10px;
+        font-size: 13px;
+    }
+    .navbar{
+        padding: 15px;
+        padding-top: 30px;
+    }
+}
+@media (max-width: 400px){
+    .title{
+        font-size: 20px;
+    }
+    .navContents{
+        gap: 10px;
+        font-size: 15px;
+    }
+    .navbar{
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
 }

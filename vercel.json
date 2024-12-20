@@ -4,6 +4,7 @@
         "source": "/:match*",
         "destination": "/index.html"
       }
-    ]
-  }
+    ],
+    "devCommand" : "vite dev"
+}
   

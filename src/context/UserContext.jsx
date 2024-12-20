@@ -24,10 +24,10 @@ const UserProvider = ({children}) => {
             .then(async(response) => {
               if(await response.status == 200){
                 const data = await response.json()
-                setIsLogged(true)
                 
                 setUsername(data.username)
                 setName(data.name)
+                setIsLogged(true)
                 setLoading(false)
               }
               else{

@@ -38,14 +38,14 @@ function AddAttendance() {
       <div className="addAttendance">
         <span className="label">Subject Name</span>
         <input onChange={onChangeHandler} type="text" className='input' placeholder='Enter subject name or code' id="" />
-          <label>Select days:</label><br/>
-          <div className="daysInput">
-            <input onChange={selectHandler} type="checkbox" name="mathDays" value="1"/>Monday<br/>
-            <input onChange={selectHandler} type="checkbox" name="mathDays" value="2"/>Tuesday<br/>
-            <input onChange={selectHandler} type="checkbox" name="mathDays" value="3"/>Wednesday<br/>
-            <input onChange={selectHandler} type="checkbox" name="mathDays" value="4"/>Thursday<br/>
-            <input onChange={selectHandler} type="checkbox" name="mathDays" value="5"/>Friday<br/>
-          </div>
+        <label>Select days:</label><br/>
+        <div className="daysInput">
+          <div><input onChange={selectHandler} type="checkbox" name="mathDays" value="1"/>Monday</div>
+          <div><input onChange={selectHandler} type="checkbox" name="mathDays" value="2"/>Tuesday</div>
+          <div><input onChange={selectHandler} type="checkbox" name="mathDays" value="3"/>Wednesday</div>
+          <div><input onChange={selectHandler} type="checkbox" name="mathDays" value="4"/>Thursday</div>
+          <div><input onChange={selectHandler} type="checkbox" name="mathDays" value="5"/>Friday</div>
+        </div>
         <Button onClick={addHandler} buttonText='Add Subject' />
       </div>
     </div>

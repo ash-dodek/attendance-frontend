@@ -43,13 +43,13 @@ function Class(props) {
             <div className="class-title">{props.subject} <span className='percentage'>({percentFinder()}%)</span> </div>
             <div className="class-stats">Total: <span className="ltext">{daysAttended}</span>/{totalDays}</div>
         </div>
-        <div className="days">
+        {/* <div className="days">
             <span className=''>M</span>
             <span className='isTrue'>T</span>
             <span className=''>W</span>
             <span className='isTrue'>T</span>
             <span className='isTrue'>F</span>
-        </div>
+        </div> */}
     </div>
   )
 }

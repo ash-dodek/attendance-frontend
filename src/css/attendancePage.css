@@ -45,15 +45,16 @@ body{
 }
 #icon{
     font-size: 50px;
+    margin-right: 35px;
 }
 .class{
     background-color: #E2E2E2;
     padding: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 30px;
     align-items: center;
-    width: 330px;
+    width: 25vw;
     height: 120px;
     border-radius: 25px;
 }
@@ -86,4 +87,37 @@ body{
     width: max-content;
     text-align: center;
     justify-content: center;
+}
+
+@media (max-width: 1200px){
+    .subjects{
+        gap: 15px;
+    }
+    .class{
+        padding: 25px;
+    }
+    .class-title{
+        font-size: 26px;
+    }
+    #icon{
+        font-size: 40px;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 850px){
+    .class{
+        width: fit-content;
+    }
+    .subjects{
+        grid-template-columns: fit-content(100px) fit-content(100px);
+    }
+}
+@media (max-width: 520px){
+    .class{
+        width: 70vw;
+    }
+    .subjects{
+        grid-template-columns: fit-content(100px);
+    }
 }
