@@ -4,12 +4,15 @@ import Class from './Class'
 import Button from './Button'
 import { Link, useNavigate } from 'react-router-dom'
 import { AttendanceContext } from '../context/AttendanceContext'
+import { UserContext } from '../context/UserContext'
 
 
 function AttendancePage() {
   const navigate = useNavigate()
   const [res, setRes] = useState([])
   const {getSubjects, setSubjectName, subjectName} = useContext(AttendanceContext)
+
+  const {username} = useContext(UserContext)
 //   let res;
   useEffect(() => {
     try {

@@ -56,6 +56,8 @@ const UserProvider = ({children}) => {
             const data = await res.json()
             if(res.status == 200){
                 setIsLogged(true)
+                setUsername(data.username)
+                setName(data.name)
                 return data
             }
             else{
@@ -88,7 +90,8 @@ const UserProvider = ({children}) => {
             }
         })
         .then(data => {
-            document.cookie = `accessToken=${data.accessToken}`
+            setUsername(data.username)
+            setName(data.name)
             setIsLogged(true)
             console.log("loggedin")
             return true
@@ -108,6 +111,8 @@ const UserProvider = ({children}) => {
         .then(res => {
             if(res.status == 200){
                 setIsLogged(false)
+                setUsername(null)
+                setName(null)
                 return res.json()
             }
         })
