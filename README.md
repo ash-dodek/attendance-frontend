@@ -1,7 +1,7 @@
 # Attendance Tracking
 A web-based attendance tracking system for students in schools and colleges. It helps students manage and monitor attendance without any issues.
 
-- *This repository contains the frontend code for the project, the backend code can be found [here](https://github.com/ash-dodek/attendance-frontend)*
+- *This repository contains the frontend code for the project, the backend code can be found [here](https://github.com/ash-dodek/attendance-tracking-backend)*
 
 
 #### [Checkout hosted site](https://ash-attendance-tracking.vercel.app/)
