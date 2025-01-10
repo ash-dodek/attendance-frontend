@@ -12,11 +12,11 @@ function Login() {
 
   const onUsernameChange = (e) => {
     e.preventDefault()
-    setUsername(e.target.value)
+    setUsername(e.target.value.trim())
   }
   const onPasswordChange = (e) => {
     e.preventDefault()
-    setPassword(e.target.value)
+    setPassword(e.target.value.trim())
   }
   
   const handleLogin = async (e) => {

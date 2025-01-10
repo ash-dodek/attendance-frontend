@@ -19,7 +19,7 @@ function AddAttendance() {
     }
   }
   const onChangeHandler= (e)=>{
-    setSubject(e.target.value)
+    setSubject(e.target.value.trim())
   }
 
   const addHandler = async ()  => {

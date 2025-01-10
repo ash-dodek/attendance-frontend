@@ -26,15 +26,15 @@ function Register() {
   
   const onUsernameChange = (e) => {
     e.preventDefault()
-    setUsername(e.target.value)
+    setUsername(e.target.value.trim())
   }
   const onPasswordChange = (e) => {
     e.preventDefault()
-    setPassword(e.target.value)
+    setPassword(e.target.value.trim())
   }
   const onNameChange = (e) => {
     e.preventDefault()
-    setName(e.target.value)
+    setName(e.target.value.trim())
   }
 
 
