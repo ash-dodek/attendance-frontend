@@ -8,7 +8,7 @@ import { AttendanceContext } from '../context/AttendanceContext';
 function ShowsSubject(props) {
   const [date, setDate] = useState(new Date())
   const currentUrl = window.location.pathname
-  const currentSubject = currentUrl.split('/').pop()
+  const currentSubject = decodeURIComponent((currentUrl.split('/').pop()))
   const [attendanceData, setAttendanceData] = useState([])
   const [subjectDays, setSubjectDays] = useState([])
   const {getSubjectDetails, getSubjects, markAttendance, editAttendance} = useContext(AttendanceContext)
